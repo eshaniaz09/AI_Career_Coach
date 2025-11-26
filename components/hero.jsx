@@ -56,9 +56,9 @@ return (
         <div className="hero-image-wrapper mt-5 md:mt-0">
         <div ref={imageRef} className="hero-image">
             <Image
-            src="/banner.jpeg"
-            width={1260}
-            height={720}
+            src="/pic9.png"
+            width={1200}
+            height={420}
             alt="Dashboard Preview"
             className="rounded-lg shadow-2xl border mx-auto"
             priority

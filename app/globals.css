@@ -118,7 +118,9 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    background: linear-gradient(135deg, #163235 0%, #0e7472 100%);
+    /* min-height: 100vh; */
   }
 }
 
@@ -145,12 +147,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.1) 1px,
-      transparent 1px
-    ),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background: linear-gradient(135deg, #163235 0%, #0e7472 100%);
   background-size: 50px 50px;
   pointer-events: none;
   z-index: -1;
@@ -169,10 +166,44 @@
 
 @layer utilities {
   .gradient {
-    @apply bg-gradient-to-b from-gray-400 via-gray-200 to-gray-600;
+    @apply bg-linear-to-b from-gray-400 via-gray-200 to-gray-600;
   }
 
   .gradient-title {
-    @apply bg-gradient-to-b from-gray-400 via-gray-200 to-gray-600 font-extrabold tracking-tighter text-transparent bg-clip-text pb-2 pr-2;
+    @apply bg-linear-to-b from-gray-400 via-gray-200 to-gray-600 font-extrabold tracking-tighter text-transparent bg-clip-text pb-2 pr-2;
   }
+}
+
+
+.bg-main-gradient {
+  background: linear-gradient(135deg, #163235 0%, #0e7472 100%);
+}
+
+
+.nav-hover-gradient {
+  background: linear-gradient(135deg, #163235 0%, #0e7472 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-hover-bg:hover {
+  background: linear-gradient(135deg, #163235 0%, #0e7472 100%);
+  color: white !important;
+}
+
+
+/* Gradient border on hover for feature cards */
+.card-hover-border {
+  border: 2px solid transparent;
+  border-radius: 3px; /* match your Card's rounding */
+  transition: all 0.3s ease;
+}
+.card-hover-border:hover {
+  border-image: linear-gradient(135deg, #68bfc9 0%, #176e6d 100%) 1;
+}
+
+.text-custom {
+  background: linear-gradient(135deg, #66b9c4 0%, #34a09e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

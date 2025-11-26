@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
             <main className="min-h-screen">{children} </main>
             <Toaster richColors/>
             {/* footer */}
-            <footer className="bg-muted/50 py-12">
+            <footer className="bg-muted/60 py-12">
               <div className="container mx-auto px-4 text-center text-gray-200">
                 <p>© 2025 Career AI. Made with 💕 by Eesha.</p>
               </div>

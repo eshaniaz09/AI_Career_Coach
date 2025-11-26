@@ -39,12 +39,12 @@ export default function Home() {
             {features.map((feature, index) => (
               <Card
                 key={index}
-                className="border-2 hover:border-primary transition-colors duration-300"
+                className="card-hover-border"
               >
                 <CardContent className="pt-6 text-center flex flex-col items-center">
                   <div className="flex flex-col items-center justify-center">
                     {feature.icon}
-                    <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
+                    <h3 className="text-xl text-custom font-bold mb-2">{feature.title}</h3>
                     <p className="text-muted-foreground">
                       {feature.description}
                     </p>
@@ -101,7 +101,7 @@ export default function Home() {
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
                   {item.icon}
                 </div>
-                <h3 className="font-semibold text-xl">{item.title}</h3>
+                <h3 className="font-semibold text-custom text-xl">{item.title}</h3>
                 <p className="text-muted-foreground">{item.description}</p>
               </div>
             ))}
@@ -122,7 +122,7 @@ export default function Home() {
                 <CardContent className="pt-6">
                   <div className="flex flex-col space-y-4">
                     <div className="flex items-center space-x-4 mb-4">
-                      <div className="relative h-12 w-12 flex-shrink-0">
+                      <div className="relative h-12 w-12 shrink-0">
                         <Image
                           width={40}
                           height={40}
@@ -161,7 +161,9 @@ export default function Home() {
       </section>
 
          {/* FAQ Section */}
-      <section className="w-full py-12 md:py-24">
+      <section className="w-full py-12 md:py-24 " style={{
+    background: "rgba(0, 0, 0, 0.9)",
+  }}>
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl font-bold mb-4">
