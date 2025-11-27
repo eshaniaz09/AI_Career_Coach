@@ -151,8 +151,8 @@ const DashboardView = ({ insights }) => {
             Displaying minimum, median, and maximum salaries (in thousands)
           </CardDescription>
         </CardHeader>
-        <CardContent >
-          <div className="h-[400px]">
+        <CardContent className="pt-6" >
+          <div className="w-full h-[400px]">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={salaryData}>
                 <CartesianGrid strokeDasharray="3 3" />

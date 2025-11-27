@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       baseTheme:dark,
     }}>
     <html lang="en" suppressHydrationWarning>
-      <body
+      <body suppressHydrationWarning={true}
         className={`${inter.className}`}
       >
       <ThemeProvider
