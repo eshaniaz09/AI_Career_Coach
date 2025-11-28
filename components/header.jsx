@@ -180,9 +180,9 @@ const Header = async () => {
   await checkUser();
   return (
     <header className="fixed top-0 w-full border-b bg-background/80 backdrop-blur-md z-50 supports-backdrop-filter:bg-background/60">
-      <nav className="container mx-auto px-3 sm:px-4 lg:px-6 h-14 sm:h-16 flex items-center justify-between">
+      <nav className=" mx-auto px-3 sm:px-4 lg:px-6 h-14 sm:h-16 flex items-center justify-between">
         {/* Logo Section */}
-        <Link href="/" className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
+        <Link href="/" className="flex items-center gap-1.5 sm:gap-2 shrink-0">
           <Image
             src="/career_logo2.png"
             alt="CareerAI"
