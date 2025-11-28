@@ -56,6 +56,8 @@ export const entrySchema = z
     }
   );
 
+
+  //combining entry schema and contact schema to make resume schema
 export const resumeSchema = z.object({
   contactInfo: contactSchema,
   summary: z.string().min(1, "Professional summary is required"),
